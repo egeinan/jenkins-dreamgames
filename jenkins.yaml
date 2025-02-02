@@ -1,0 +1,11 @@
+jenkins:
+  systemMessage: "Welcome to Jenkins Configuration as Code"
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "admin"
+          password: "admin123"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
